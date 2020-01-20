@@ -8,8 +8,7 @@ def t_read(file):
             data = json.load(f)
             return data
     except (TypeError, OverflowError, ValueError) as exc:
-                raise BadJSONError("Cannot decode object from JSON.\n%s" %
-                                   str(exc))
+                print(f"Cannot decode object from JSON, Input file {file}.\n %s" % str(exc))
 
 
 

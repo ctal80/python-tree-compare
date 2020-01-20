@@ -26,6 +26,9 @@ def main():
     #Object2 to compare
     obj2 = functions.t_read(file2)
     
+    if obj1 == None or obj2 == None:
+        sys.exit("Execution aborted due to input problem!!")
+
     #output file1
     f1= open("output/tree1_out.txt","w") 
     
